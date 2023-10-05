@@ -1,12 +1,12 @@
-objeto = int(input('escoge un numero: '))
+objetivo = int(input("escoga un nummero: "))
 epsilon = 0.01
-paso = epsilon**2
+pasos = epsilon**2
 respuesta = 0.0
 
-while abs(respuesta**2 -objeto) >= epsilon and respuesta <= objeto:
-    print(abs(respuesta**2 - objeto), respuesta)
-    respuesta += paso
-if abs(respuesta**2 - objeto) >= epsilon:
-    print(f'no se encontro la raiz cuadrada de {objeto}')
+while abs(respuesta**2 -objetivo) >= epsilon and respuesta <= objetivo:
+    print(f'objetivo= {abs(respuesta**2 -objetivo)} respuesta= {respuesta}')
+    respuesta += pasos
+if abs(respuesta**2 - objetivo) >= epsilon:
+    print(f'no se pudo encontras la raiz cuadrada de {objetivo}')
 else:
-    print(f'la raiz ciadrada de {objeto} es {respuesta}')
+    print(f'la raiz cuadrada de {objetivo} es {respuesta}')
